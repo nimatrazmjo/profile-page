@@ -49,11 +49,9 @@ html {
 }
 .nav__logo {
   margin-right: 2rem;
-  font-size: 2.8rem;
 }
-.nav__logo img {
+.nav__logo__img {
   width: 13rem;
-  height: 13rem;
 }
 .nav__search {
   margin-right: auto;
