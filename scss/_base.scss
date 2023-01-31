@@ -12,6 +12,12 @@
 
 }
 
+// break point
+
+$breakpoint-small: 37.5rem; // 600px
+$breakpoint-medium: 53rem; // 848px
+$breakpoint-large: 75rem; // 1200px
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,6 +34,7 @@ html {
     font-size: 62.5%; // 1rem = 10px
     font-family: 'Satoshi', sans-serif;
     background-color: var(--color-slate-200);
+    color: var(--color-neutral-900);
 }
 
 

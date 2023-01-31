@@ -27,6 +27,7 @@ html {
   font-size: 62.5%;
   font-family: "Satoshi", sans-serif;
   background-color: var(--color-slate-200);
+  color: var(--color-neutral-900);
 }
 
 .border-bottom {
@@ -36,9 +37,120 @@ html {
 .container {
   width: 100%;
   max-width: 120rem;
-  margin: 5rem auto;
-  box-shadow: var(--border-shadow);
-  background-color: var(--color-slate-50);
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 5rem;
+  margin-top: 1.8rem;
+}
+.nav__logo {
+  margin-right: 2rem;
+  font-size: 2.8rem;
+}
+.nav__logo img {
+  width: 13rem;
+  height: 13rem;
+}
+.nav__search {
+  margin-right: auto;
+  position: relative;
+  cursor: pointer;
+}
+.nav__search__input {
+  padding: 1rem;
+  border-radius: 3rem;
+  width: 30rem;
+  border: 1px solid var(--color-neutral-400);
+  outline: none;
+}
+.nav__search__icon {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex: 1;
+}
+.nav__menu__item {
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav__menu__item a {
+  text-decoration: none;
+  color: var(--color-neutral-900);
+}
+@media screen and (max-width: 53rem) {
+  .nav__menu {
+    display: none;
+  }
+}
+.nav__user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.nav__user__icon {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.nav__user__profile {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-200);
+  color: var(--color-neutral-900);
+  margin-left: 1rem;
+  border-radius: 2.2rem;
+}
+.nav__user__profile__username {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 0 0 2rem;
+  cursor: pointer;
+}
+.nav__user__profile__avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 40%;
+  margin-left: 2rem;
+  margin-right: -1.1rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 53rem) {
+  .nav__user {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+.hamburger__line {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: var(--color-neutral-800);
+  margin: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 53rem) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
