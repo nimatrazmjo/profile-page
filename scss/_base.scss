@@ -43,4 +43,7 @@ html {
     height: 1px;
     background-color: var(--color-neutral-400);
 }
+.content_line {
+    grid-column: 3/12;
+}
 // Path: scss/_components.scss

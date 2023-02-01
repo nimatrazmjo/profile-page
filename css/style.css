@@ -37,6 +37,10 @@ html {
   background-color: var(--color-neutral-400);
 }
 
+.content_line {
+  grid-column: 3/12;
+}
+
 .container {
   width: 100%;
   max-width: 120rem;
@@ -177,6 +181,52 @@ html {
 }
 .breadcrumbs__active {
   color: var(--color-neutral-500);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr minmax(20rem, 1fr) repeat(9, 1fr) 1fr;
+  grid-template-rows: min-content;
+  gap: 1rem;
+}
+.content > * {
+  padding: 2rem;
+}
+
+.left__profile {
+  background-color: var(--color-neutral-200);
+  grid-column: 2/3;
+  grid-row: 1/span 8;
+}
+
+.menu {
+  background-color: var(--color-neutral-400);
+  grid-column: 3/12;
+}
+
+.about {
+  background-color: var(--color-neutral-600);
+  grid-column: 3/12;
+}
+
+.skills {
+  background-color: var(--color-neutral-50);
+  grid-column: 3/12;
+}
+
+.locations {
+  background-color: var(--color-neutral-100);
+  grid-column: 3/12;
+}
+
+.experiences {
+  background-color: var(--color-neutral-200);
+  grid-column: 3/12;
+}
+
+.projects {
+  background-color: var(--color-neutral-400);
+  grid-column: 3/12;
 }
 
 /*# sourceMappingURL=style.css.map */
