@@ -1,0 +1,26 @@
+.breadcrumbs {
+    margin: 2rem 0 0 2rem;
+    display: flex;
+    gap: 1rem;
+
+    &__item {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        font-size: 1.2rem;
+        &__link {
+            color: var(--color-nuetral-500);;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &__line {
+            transform: rotate(20deg);
+        }
+    }
+
+    &__active {
+        color: var(--color-neutral-500);
+    }
+}
