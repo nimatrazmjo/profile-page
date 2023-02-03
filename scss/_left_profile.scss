@@ -3,4 +3,100 @@
     background-color: var(--color-neutral-200);
     grid-column: 2/3;
     grid-row: 1 / span 8;
+
+    &__overview {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__follow {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 1rem;
+
+        &__button {
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        &__more {
+            border: 1px solid var(--color-neutral-600);
+            color: var(--color-neutral-900);
+            padding: .5rem 1rem;
+            border-radius: 4rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+    }
 }
+
+.short_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+
+    &__name {
+        font-size: 2rem;
+        font-weight: 400
+    }
+
+    &__save {
+        position: relative;
+        justify-self: end;
+        &__total {
+            position: absolute;
+            top: .5rem;
+            right: .45rem;
+            color: var(--color-neutral-100);
+            padding: 0.75rem 0.75;
+            border-radius: 50%;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    &__available {
+        background-color: var(--color-neutral-100);
+        color: var(--color-primary-500);
+        padding: .3rem .5rem;
+        border-radius: 1rem;
+        justify-self: left;
+    }
+
+    &__star {
+        justify-self: end;
+        gap: 1rem;
+        font-size: 3.5rem;
+        font-weight: 400;
+        color: var(--color-neutral-500);
+    }
+}
+
+.applied,
+.reviewed,
+.contacted
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        font-size: .8rem;
+        font-weight: 500;
+        color: var(--color-neutral-500);
+    }
+
+    &__number {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--color-neutral-900);
+        margin-top: .5rem;
+    }
+}
+
