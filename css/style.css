@@ -41,6 +41,12 @@ html {
 .content_line {
   grid-column: 3/10;
 }
+@media screen and (max-width: 841px) {
+  .content_line {
+    grid-column: 2/-1;
+    margin-right: 2rem;
+  }
+}
 
 px-1 {
   padding-left: 1rem;
@@ -271,11 +277,22 @@ my-3 {
   grid-template-rows: min-content;
   gap: 2rem;
 }
+@media screen and (max-width: 841px) {
+  .content {
+    grid-template-columns: minmax(20rem, 1fr) 1fr repeat(9, 1fr) 1fr;
+  }
+}
 
 .left__profile {
   background-color: var(--color-neutral-200);
   grid-column: 2/3;
   grid-row: 1/span 8;
+}
+@media screen and (max-width: 841px) {
+  .left__profile {
+    grid-column: 1/2;
+    margin-left: 2rem;
+  }
 }
 .left__profile__overview {
   display: flex;
@@ -302,6 +319,9 @@ my-3 {
   border-radius: 4rem;
   font-size: 1.4rem;
   font-weight: 500;
+}
+.left__profile__img {
+  width: 100%;
 }
 
 .short_details {
@@ -379,6 +399,11 @@ my-3 {
   font-weight: 500;
   color: var(--color-neutral-500);
 }
+@media screen and (max-width: 841px) {
+  .main_page_menu {
+    grid-column: 2/-1;
+  }
+}
 
 .main_menu {
   display: flex;
@@ -421,6 +446,17 @@ my-3 {
   font-weight: 400;
   color: var(--color-neutral-800);
 }
+@media screen and (max-width: 841px) {
+  .about {
+    grid-column: 2/-1;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 641px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
 
 .skills {
   grid-column: 3/10;
@@ -434,6 +470,23 @@ my-3 {
 }
 .skills__tags:not(:last-child) {
   margin-right: 0.5rem;
+}
+@media screen and (max-width: 641px) {
+  .skills__tags {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 841px) {
+  .skills {
+    grid-column: 2/-1;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 641px) {
+  .skills {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
 }
 
 .locations {
@@ -455,10 +508,21 @@ my-3 {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 841px) {
+  .locations {
+    grid-column: 2/-1;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 554px) {
+  .locations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .experiences {
   background-color: var(--color-neutral-200);
-  grid-column: 3/10;
+  grid-column: 3/12;
 }
 
 .projects {
@@ -472,8 +536,20 @@ my-3 {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1rem;
 }
+@media screen and (max-width: 641px) {
+  .projects__content {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
 .projects__image {
   width: 100%;
+}
+@media screen and (max-width: 841px) {
+  .projects {
+    grid-column: 2/-1;
+    margin-right: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

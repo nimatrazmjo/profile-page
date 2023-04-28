@@ -4,6 +4,10 @@
     grid-template-rows: min-content;
     gap: 2rem;
 
+    @media screen and (max-width: 841px) {
+        grid-template-columns: minmax(20rem, 1fr) 1fr repeat(9, 1fr)  1fr;
+    }
+
     // & > * {
     //     padding:  2rem;
     // }

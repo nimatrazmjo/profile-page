@@ -10,4 +10,13 @@
         font-weight: 400;
         color: var(--color-neutral-800);
     }
+
+    @media screen and (max-width: 841px) {
+        grid-column: 2/-1;
+        margin-right: 2rem;
+    }
+
+    @media screen and (max-width: 641px) {
+        grid-template-columns: 1fr;
+    }
 }
