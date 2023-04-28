@@ -1,4 +1,14 @@
 .skills {
-    background-color: var(--color-neutral-50);
-    grid-column: 3/12;
+
+    grid-column: 3/10;
+    display: flex;
+    &__tags {
+        background-color: var(--color-neutral-200);
+        padding: .5rem;
+        border-radius: 1rem;
+        font-size: .8rem;
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
 }

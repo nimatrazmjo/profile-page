@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr minmax(20rem, 1fr) repeat(9, 1fr)  1fr;
     grid-template-rows: min-content;
-    gap: 1rem;
+    gap: 2rem;
 
     // & > * {
     //     padding:  2rem;

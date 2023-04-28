@@ -1,4 +1,39 @@
-.menu {
-    background-color: var(--color-neutral-400);
-    grid-column: 3/12;
+.main_page_menu {
+    grid-column: 3/10;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-neutral-500);
+}
+
+.main_menu {
+    display: flex;
+
+    &__item {
+        display: flex;
+        justify-content: start;
+        padding-bottom: .3rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var(--color-neutral-100);
+        }
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &:last-child {
+       flex: 1;
+    }
+}
+
+.active {
+    color: var(--color-neutral-900);
+    border-bottom: 0.2rem solid var(--color-neutral-900);
 }

@@ -1,4 +1,13 @@
 .about {
-    background-color: var(--color-neutral-600);
-    grid-column: 3/12;
+    grid-column: 3/10;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+
+    &__content {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: var(--color-neutral-800);
+    }
 }
