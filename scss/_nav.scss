@@ -7,7 +7,7 @@
     &__logo{
         margin-right: 2rem;
         &__img{
-            width: 13rem;
+            width: 10rem;
         }
     }
 
@@ -18,7 +18,7 @@
         &__input{
             padding: 1rem;
             border-radius: 3rem;
-            width: 30rem;
+            width: 20rem;
             border: 1px solid var(--color-neutral-400);
             outline: none;
         }
@@ -41,7 +41,7 @@
         flex: 1;
         &__item{
             margin-left: 2rem;
-            font-size: 1rem;
+            font-size: 1.3rem;
             font-weight: 500;
             cursor: pointer;
             a {

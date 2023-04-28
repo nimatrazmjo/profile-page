@@ -140,7 +140,7 @@ my-3 {
   margin-right: 2rem;
 }
 .nav__logo__img {
-  width: 13rem;
+  width: 10rem;
 }
 .nav__search {
   margin-right: auto;
@@ -150,7 +150,7 @@ my-3 {
 .nav__search__input {
   padding: 1rem;
   border-radius: 3rem;
-  width: 30rem;
+  width: 20rem;
   border: 1px solid var(--color-neutral-400);
   outline: none;
 }
@@ -170,7 +170,7 @@ my-3 {
 }
 .nav__menu__item {
   margin-left: 2rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
 }
@@ -249,7 +249,7 @@ my-3 {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .breadcrumbs__item__link {
   color: var(--color-nuetral-500);
@@ -309,6 +309,7 @@ my-3 {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 1rem;
+  justify-self: end;
 }
 .short_details__name {
   font-size: 2rem;
@@ -318,14 +319,19 @@ my-3 {
   position: relative;
   justify-self: end;
 }
+.short_details__save__image {
+  width: 3rem;
+  height: 5rem;
+  align-items: center;
+}
 .short_details__save__total {
   position: absolute;
-  top: 0.5rem;
-  right: 0.45rem;
+  top: 1.2rem;
+  right: 0.8rem;
   color: var(--color-neutral-100);
   padding: 0.75rem 0.75;
   border-radius: 50%;
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 .short_details__available {
@@ -334,11 +340,12 @@ my-3 {
   padding: 0.3rem 0.5rem;
   border-radius: 1rem;
   justify-self: left;
+  width: 100%;
 }
 .short_details__star {
   justify-self: end;
   gap: 1rem;
-  font-size: 3.5rem;
+  width: 2.5rem;
   font-weight: 400;
   color: var(--color-neutral-500);
 }
